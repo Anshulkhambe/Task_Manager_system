@@ -18,7 +18,7 @@ FROM eclipse-temurin:17-jre
 WORKDIR /app
 
 # Rename the real JAR to app.jar
-COPY --from=builder /app/target/Task_Management_system-0.0.1-SNAPSHOT.war.original
+COPY --from=builder /app/target/Task_Management_system-0.0.1-SNAPSHOT.jar.original
 EXPOSE 8080
 ENV PORT=8080
 CMD ["java", "-jar", "app.jar"]
