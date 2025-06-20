@@ -1,0 +1,43 @@
+<h2 mat-dialog-title>{{ data ? 'Edit Task' : 'Add New Task' }}</h2>
+
+<mat-dialog-content [formGroup]="taskForm">
+  <mat-form-field appearance="outline" class="w-100 mb-3">
+    <mat-label>Task Title</mat-label>
+    <input matInput formControlName="title" placeholder="e.g., Complete project report" />
+    <mat-error *ngIf="taskForm.get('title')?.hasError('required') && taskForm.get('title')?.touched">
+      Title is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="w-100 mb-3">
+    <mat-label>Description</mat-label>
+    <textarea matInput formControlName="description" placeholder="Provide task details"></textarea>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="w-100 mb-3">
+    <mat-label>Due Date</mat-label>
+    <input matInput [matDatepicker]="picker" formControlName="dueDate" placeholder="Choose a date" />
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+    <mat-error *ngIf="taskForm.get('dueDate')?.hasError('required') && taskForm.get('dueDate')?.touched">
+      Due Date is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="w-100 mb-3" *ngIf="data">
+    <mat-label>Status</mat-label>
+    <mat-select formControlName="status">
+      <mat-option value="Pending">Pending</mat-option>
+      <mat-option value="In Progress">In Progress</mat-option>
+      <mat-option value="Completed">Completed</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="primary" [disabled]="taskForm.invalid" (click)="onSave()">
+    {{ data ? 'Save Changes' : 'Add Task' }}
+  </button>
+</mat-dialog-actions>

@@ -1,0 +1,5 @@
+package com.task.bean;
+
+public class User {
+
+}

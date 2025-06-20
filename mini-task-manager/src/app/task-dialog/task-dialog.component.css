@@ -1,0 +1,108 @@
+mat-dialog-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #85c1e9;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(236, 240, 241, 0.1);
+  margin-bottom: 20px;
+}
+
+mat-dialog-content {
+  color: #ecf0f1;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+mat-form-field {
+  margin-bottom: 1.2rem;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: rgba(236, 240, 241, 0.4);
+}
+
+.mat-form-field-label {
+  color: rgba(236, 240, 241, 0.6);
+}
+
+.mat-form-field-wrapper .mat-form-field-label.mat-form-field-label-active {
+  color: #85c1e9 !important;
+}
+
+.mat-input-element {
+  color: #ecf0f1;
+  caret-color: #85c1e9;
+}
+
+.mat-icon {
+  color: rgba(236, 240, 241, 0.5);
+}
+
+mat-error {
+  color: #e74c3c;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 0.2rem;
+}
+
+.mat-calendar-content {
+  background-color: #34495e;
+  color: #ecf0f1;
+}
+.mat-calendar-body-cell-content {
+  color: #ecf0f1;
+}
+.mat-calendar-body-selected {
+  background-color: #3498db !important;
+  color: white !important;
+}
+.mat-calendar-body-today:not(.mat-calendar-body-selected) {
+  border-color: #3498db !important;
+}
+.mat-calendar-table-header th {
+  color: rgba(236, 240, 241, 0.8) !important;
+}
+.mat-calendar-arrow {
+  color: rgba(236, 240, 241, 0.8) !important;
+}
+.mat-datepicker-content .mat-calendar-table-header {
+  border-bottom-color: rgba(236, 240, 241, 0.1);
+}
+
+mat-dialog-actions {
+  padding-top: 20px;
+  border-top: 1px solid rgba(236, 240, 241, 0.1);
+  margin-top: 20px;
+}
+
+mat-dialog-actions button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+mat-dialog-actions button[mat-button] {
+  color: rgba(236, 240, 241, 0.7);
+}
+mat-dialog-actions button[mat-button]:hover {
+  background-color: rgba(236, 240, 241, 0.1);
+  color: #ecf0f1;
+}
+
+mat-dialog-actions button[color="primary"] {
+  background-color: #3498db;
+  color: white;
+}
+mat-dialog-actions button[color="primary"]:hover {
+  background-color: #217dbb;
+  transform: translateY(-1px);
+}
+mat-dialog-actions button[color="primary"]:disabled {
+  background-color: #7f8c8d;
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}

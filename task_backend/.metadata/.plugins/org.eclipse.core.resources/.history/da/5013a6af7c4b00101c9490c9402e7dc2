@@ -1,0 +1,38 @@
+package com.task.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.task.bean.User;
+import com.task.dao.UserRepository;
+
+@Service
+public class UserServiceImpl implements UserService{
+	
+	
+ @Autowired
+ private UserRepository userrepository;
+ 
+ @Override
+	public User loginUser(String username, String password) 
+	{
+		// TODO Auto-generated method stub
+		return userrepository.findByUsernameAndPassword(username, password);
+	}
+
+	@Override
+	public void registerUser(User user) 
+	{
+		// TODO Auto-generated method stub
+		userrepository.save(user);
+	}
+
+	@Override
+	public List<User> getAllUsers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+ 
+}

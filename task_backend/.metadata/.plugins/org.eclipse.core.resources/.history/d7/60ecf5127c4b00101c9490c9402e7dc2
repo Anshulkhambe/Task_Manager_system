@@ -1,0 +1,6 @@
+package com.task.service;
+
+public interface UserService {
+
+	public void registerUser(Customer user);
+}

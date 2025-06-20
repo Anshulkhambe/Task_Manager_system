@@ -1,0 +1,6 @@
+package com.task.dao;
+
+
+public class UserRepsitory extends JpaRepository{
+
+}

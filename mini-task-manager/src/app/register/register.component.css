@@ -1,0 +1,159 @@
+.register-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a2a3a 0%, #0a141a 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.register-box {
+  max-width: 550px;
+  width: 100%;
+  background-color: #2c3e50 !important;
+  border: 1px solid #34495e !important;
+  border-radius: 0.75rem;
+  padding: 3rem !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  color: #ecf0f1;
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.register-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ecf0f1;
+  margin-bottom: 2.5rem !important;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+mat-form-field {
+  margin-bottom: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: rgba(236, 240, 241, 0.4);
+}
+
+.mat-form-field-label {
+  color: rgba(236, 240, 241, 0.6);
+}
+
+.mat-form-field-wrapper .mat-form-field-label.mat-form-field-label-active {
+  color: #85c1e9 !important;
+}
+
+.mat-input-element {
+  color: #ecf0f1;
+  caret-color: #85c1e9;
+}
+
+.mat-icon {
+  color: rgba(236, 240, 241, 0.5);
+}
+
+mat-error {
+  color: #e74c3c;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 0.2rem;
+  animation: slideInLeft 0.3s ease-out;
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.submit-button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  height: auto;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-top: 1rem;
+}
+
+.submit-button:hover:not([disabled]) {
+  background-color: #217dbb;
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  background-color: #7f8c8d;
+  cursor: not-allowed;
+  opacity: 0.7;
+  transform: none;
+}
+
+.mt-4 {
+  margin-top: 2rem !important;
+}
+
+.login-link {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-color: #85c1e9;
+  color: #85c1e9;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  background-color: #85c1e9;
+  color: #2c3e50;
+  border-color: #85c1e9;
+}
+
+@media (max-width: 768px) {
+  .register-box {
+    padding: 2.5rem !important;
+  }
+  .register-title {
+    font-size: 2rem;
+    margin-bottom: 2rem !important;
+  }
+  .submit-button {
+    font-size: 1.1rem;
+    padding: 0.9rem 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .register-box {
+    padding: 1.5rem !important;
+    margin: 1rem;
+  }
+  .register-title {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem !important;
+  }
+  mat-form-field {
+    margin-bottom: 1rem;
+  }
+  .submit-button {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+  .login-link {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
