@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-   "start": "ng serve",
-    "build": "ng build",
+    "start": "node dist/mini-task-manager/server/server.mjs",
+    "build": "npx ng build --configuration production && npx ng run mini-task-manager:server",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:mini-task-manager": "node dist/mini-task-manager/server/server.mjs"
