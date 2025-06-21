@@ -96,6 +96,11 @@
                 "glob": "**/*",
                 "input": "public"
               }
+               {
+    "glob": "static.json",
+    "input": "./",
+    "output": "."
+  }
             ],
             "styles": [
               "@angular/material/prebuilt-themes/magenta-violet.css",
