@@ -5,12 +5,13 @@
     "node": ">=18 <19"
   },
   "scripts": {
-    "ng": "ng",
-    "build": "npx ng build --configuration production && npx ng run mini-task-manager:server",
-    "start": "node dist/mini-task-manager/server/server.mjs",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr": "node dist/mini-task-manager/server/server.mjs"
+   "ng": "ng",
+  "start": "ng serve",
+  "build": "ng build",
+  "build:ssr": "ng build --configuration production && ng run mini-task-manager:server",
+  "serve:ssr": "node dist/mini-task-manager/server/main.js",
+  "watch": "ng build --watch --configuration development",
+  "test": "ng test"
   },
   "private": true,
   "dependencies": {
