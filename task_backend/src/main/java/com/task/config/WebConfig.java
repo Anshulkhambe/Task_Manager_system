@@ -10,10 +10,10 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-            .allowedOriginPatterns("*")  // ✅ use pattern to avoid strict checks
+            .allowedOriginPatterns("*")  
             .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
             .allowedHeaders("*")
-            .exposedHeaders("*")         // ✅ exposes headers to Angular
-            .allowCredentials(true);     // ✅ required if you're using cookies or auth
+            .exposedHeaders("*")         //  exposes headers to Angular
+            .allowCredentials(true);     //  required if you're using cookies or auth
     }
 }
