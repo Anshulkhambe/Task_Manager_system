@@ -13,7 +13,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/tasks")
+<<<<<<< HEAD
 @CrossOrigin("https://task-manager-system-7.onrender.com") 
+=======
+@CrossOrigin(origins = "https://task-manager-system-7.onrender.com")
+>>>>>>> 2aa78df (cors)
 public class TaskController {
 	  @Autowired 
     private final TaskService taskService; 
@@ -36,6 +40,7 @@ public class TaskController {
 
     @PostMapping
     public ResponseEntity<Task> createTask(@RequestBody Task task) {
+        System.out.println("Received Task: " + task);
         Task createdTask = taskService.createTask(task);
         return new ResponseEntity<>(createdTask, HttpStatus.CREATED);
     }

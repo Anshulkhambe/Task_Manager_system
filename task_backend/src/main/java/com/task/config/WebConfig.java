@@ -12,7 +12,10 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-            .allowedOrigins("https://task-manager-system-7.onrender.com")
+            .allowedOrigins(
+    "https://task-manager-system-7.onrender.com",
+    "https://task-manager-system-3l2x.onrender.com", 
+    "http://localhost:4200") 
             .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
             .allowedHeaders("*")
             .allowCredentials(true);
