@@ -6,8 +6,6 @@ A full-stack task management application built with **Angular** (frontend), **Sp
 
 ### 👤 User Authentication & Authorization
 - User registration & login
-- JWT-based authentication (backend ready)
-- Secure password storage with BCrypt
 
 ### ✅ Task Management
 - Create, read, update, and delete tasks
@@ -26,7 +24,7 @@ A full-stack task management application built with **Angular** (frontend), **Sp
 ### 🔹 Frontend
 - **Angular** (TypeScript)
 - **Angular Material** – UI components
-- **RxJS / HttpClient** – Reactive requests
+- **HttpClient** – Reactive requests
 - **CSS3** – Styling
 
 ### 🔸 Backend
@@ -39,7 +37,6 @@ A full-stack task management application built with **Angular** (frontend), **Sp
 
 ### 🔐 Security
 - CORS configuration for Angular integration
-- (Optional) JWT support for authentication
 
 ---
 
