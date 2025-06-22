@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/tasks")
-@CrossOrigin(origins = "http://localhost:4200") 
+@CrossOrigin(origins = "https://task-manager-system-7.onrender.com") 
 public class TaskController {
 	  @Autowired 
     private final TaskService taskService; 
