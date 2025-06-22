@@ -15,7 +15,7 @@ import com.task.service.UserService;
 
 @RestController
 @RequestMapping("/user")
-@CrossOrigin( "http://localhost:4200")
+@CrossOrigin( "https://task-manager-system-7.onrender.com")
 public class UserController {
 
 	
