@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'https://task-manager-system-1.onrender.com/user'; 
+  private apiUrl = 'https://task-manager-system-3l2x.onrender.com/user'; 
 
   constructor(private http: HttpClient) { }
 
