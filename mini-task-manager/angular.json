@@ -16,6 +16,7 @@
           "standalone": false
         }
       },
+      
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -29,6 +30,7 @@
             "polyfills": [
               "zone.js"
             ],
+            
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {

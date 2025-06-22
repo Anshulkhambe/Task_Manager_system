@@ -18,7 +18,7 @@ export interface Task {
   providedIn: 'root'
 })
 export class TaskService {
-  private apiUrl = 'http://localhost:8081/api/tasks';
+  private apiUrl = 'https://task-manager-system-1.onrender.com/api/tasks';
   private tasksSubject: BehaviorSubject<Task[]> = new BehaviorSubject<Task[]>([]);
 
   constructor(private http: HttpClient) {

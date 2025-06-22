@@ -92,7 +92,7 @@ export class RegisterComponent implements OnInit {
         password: this.password?.value,// Send confirmPassword to backend for server-side validation
       };
 
-      this.http.post('http://localhost:8081/user/newuser', registrationData)
+      this.http.post('https://task-manager-system-1.onrender.com/user/newuser', registrationData)
         .subscribe({
           next: (response) => {
             alert("Registration successfully!");
