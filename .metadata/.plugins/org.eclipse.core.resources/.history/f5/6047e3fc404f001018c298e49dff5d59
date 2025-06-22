@@ -1,0 +1,20 @@
+# App Name (optional)
+spring.application.name=TaskManager
+
+# JDBC URL - ensure proper prefix and host
+spring.datasource.url=jdbc:postgresql://dpg-d1apsvqdbo4c73884r80-a/task_db_p1k8
+
+# Credentials
+spring.datasource.username=task_db_p1k8_user
+spring.datasource.password=82qX9sjO1ZaxKie5Kg2J9EMvkOKpd3J5
+
+# PostgreSQL Driver
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# Hibernate
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=update
+
+# Optional (but helpful in logs and debugging)
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true

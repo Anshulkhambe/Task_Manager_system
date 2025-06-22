@@ -1,0 +1,7 @@
+spring.application.name=TaskManager 
+spring.datasource.url=jdbc:postgresql://task_db_p1k8_user:82qX9sjO1ZaxKie5Kg2J9EMvkOKpd3J5@dpg-d1apsvqdbo4c73884r80-a.oregon-postgres.render.com/task_db_p1k8
+spring.datasource.username=task_db_p1k8_user
+spring.datasource.password=82qX9sjO1ZaxKie5Kg2J9EMvkOKpd3J5
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=update
