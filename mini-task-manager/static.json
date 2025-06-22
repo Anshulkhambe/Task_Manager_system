@@ -1,5 +1,12 @@
 {
+<<<<<<< HEAD
     "routes": {
       "/**": "index.html"
     }
   }
+=======
+  "routes": {
+    "/**": "index.html"
+  }
+}
+>>>>>>> 6a7ce8f2fb6d76098836209aa28f6e467520b933
